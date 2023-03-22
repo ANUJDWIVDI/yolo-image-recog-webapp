@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Recognition</title>
+  <style>
+    /* Center container */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    /* Style file input button */
+    .file-input {
+      padding: 1rem;
+      background-color: #F0F0F0;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+    }
+    /* Style submit button */
+    .submit-button {
+      margin-left: 1rem;
+      padding: 1rem;
+      background-color: #0066FF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    /* Style error message */
+    .error-message {
+      color: red;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="/image-recognition" method="post" enctype="multipart/form-data">
+      <label for="image-upload">Upload an image:</label>
+      <input type="file" id="image-upload" name="image_file" class="file-input" accept="image/*">
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
